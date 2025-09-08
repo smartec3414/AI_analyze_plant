@@ -6,7 +6,7 @@ This project analyzes the detection and the growth stages of wheat crop by captu
 Fast RCNN 
 
 we feed the input image to the CNN to generate a convolutional feature map. From the convolutional feature map, we identify the region of proposals and warp them into squares and by using a RoI pooling layer we reshape them into a fixed size so that it can be fed into a fully connected layer. From the RoI feature vector, we use a softmax layer to predict the class of the proposed region and also the offset values for the bounding box.
-
+  
 ![1](https://user-images.githubusercontent.com/64171873/174430999-fcd30ae7-290b-4da7-9c9c-6587649788ba.jpg)
 
 Faster RCNN
