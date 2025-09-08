@@ -10,7 +10,7 @@ we feed the input image to the CNN to generate a convolutional feature map. From
 ![1](https://user-images.githubusercontent.com/64171873/174430999-fcd30ae7-290b-4da7-9c9c-6587649788ba.jpg)
 
 Faster RCNN
-
+  
 using selective search to find out the region proposals. Selective search is a slow and time-consuming process affecting the performance of the network.
 So Faster RCNN eliminates the selective search algorithm and lets the network learn the region proposals.Instead of using selective search algorithm on the feature map to identify the region proposals, a separate network is used to predict the region proposals. The predicted region proposals are then reshaped using a RoI pooling layer which is then used to classify the image within the proposed region and predict the offset values for the bounding boxes.
 
